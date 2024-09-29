@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* font-family: "Roboto Slab", serif; */
+        font-family: "Roboto", sans-serif;
+        /* font-style: normal; */
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        /* background-color: rgb(23, 21, 21); */
+        width: 100vw;
+        height: 100vh;
+      }
+      .content {
+        width: 80vw;
+        height: 100vh;
+        /* background-color: antiquewhite; */
+        margin: 0 auto;
+      }
+      .navBar {
+        padding-top: 4px;
+        background-color: rgb(255 255 252);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+      }
+      .left {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      ul li {
+        margin: 14px 10px;
+        font-size: 13.5px;
+        font-weight: 500;
+        color: rgb(89, 88, 88);
+      }
+      .right {
+        display: flex;
+        gap: 10px;
+      }
+      .getStartedButton button {
+        background-color: rgb(48 97 244);
+        height: 30px;
+        color: white;
+        border: 0px solid white;
+        border-radius: 20px;
+        padding: 6px;
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+      .signInButton button {
+        height: 30px;
+        border: 0px solid white;
+        border-radius: 6px;
+        padding: 7px;
+        background-color: white;
+      }
+      .signInButton:hover button {
+        background-color: rgb(48 97 244);
+        height: 30px;
+        color: white;
+        border: 0px solid white;
+        border-radius: 20px;
+        padding: 7px;
+      }
+      .mainSection {
+        /* background-color: aqua; */
+        height: 65vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer {
+        height: 24vh;
+      }
+      .title {
+        margin-top: 10px;
+        /* position: absolute; */
+        font-size: 42px;
+        width: 40vw;
+        font-weight: 500;
+      }
+      .title span {
+        color: rgb(48 97 244);
+      }
+      .Details {
+        width: 36vw;
+        margin: 13px;
+        font-weight: 420;
+        color: #413d3de2;
+      }
+      .mainsectionbuttons {
+        display: flex;
+        gap: 14px;
+      }
+      .monthfreebutton button {
+        background-color: rgb(0, 0, 0);
+        height: 30px;
+        color: white;
+        border: 0px solid white;
+        border-radius: 20px;
+        padding: 6px;
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+      .watchVideos button {
+        background-color: white;
+        color: black;
+        height: 30px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        padding: 1px;
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+      .mainsectionbuttons {
+        margin: 10px;
+      }
+      .watchVideosButton ::before {
+        background-image: url("image.png");
+        background-size: 19px 20px;
+        background-repeat: no-repeat;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+        object-fit: cover;
+        object-position: center;
+      }
+      .watchVideosButton span {
+        color: black;
+        font-size: 15px;
+        margin-bottom: 1px;
+      }
+      .footerTitle {
+        text-align: center;
+        margin-bottom: 38px;
+      }
+      .footerTitle p {
+        
+        font-weight: 500;
+        color: #413d3d;
+      }
+      .footercompanies {
+        display: flex;
+        gap: 33px;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo {
+        padding-top: 3px;
+      }
+      .footercompanies img{
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="navBar">
+          <div class="left">
+            <div class="logo">
+              <img src="image1.png" alt="" />
+            </div>
+            <div class="listItems">
+              <ul>
+                <li>Features</li>
+                <li>Testimonails</li>
+                <li>Pricing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <div class="signInButton">
+              <button>Sign In</button>
+            </div>
+            <div class="getStartedButton">
+              <button>Get Started today</button>
+            </div>
+          </div>
+        </div>
+        <div class="mainSection">
+          <div class="title">
+            Accounting
+            <span>made simple</span>
+            for small businesses
+          </div>
+          <div class="Details">
+            Most bookkeeping software is accurate, but hard to use. We make the
+            opposite trade-off, and hope you don't get audited
+          </div>
+          <div class="mainsectionbuttons">
+            <div class="monthfreebutton">
+              <button>Get 6 months free</button>
+            </div>
+            <div class="watchVideos">
+              <button class="watchVideosButton">
+                <span>Watch Video</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footerTitle">
+            <p>Trusted by these six companies so far</p>
+          </div>
+          <div class="footercompanies">
+            <img src="transistor.7274e6c3.svg" alt="" srcset="" />
+            <img src="tuple.74eb0ae0.svg" alt="" srcset="" />
+            <img src="statickit.d7937794.svg" alt="" srcset="" />
+            <img src="mirage.18d2ec4e.svg" alt="" srcset="" />
+            <img src="laravel.7deed17e.svg" alt="" srcset="" />
+            <img src="statamic.6da5ebfb.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
